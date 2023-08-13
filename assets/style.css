@@ -176,3 +176,42 @@
     }
 
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .footer h2 {
+        text-align: center;
+    }
+
+
+}
+
+.footer-menu ul li a {
+    text-decoration: none;
+    color: #2D2D2D;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #2D2D2D;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    height: 7rem;
+    width: 10rem;
+}
