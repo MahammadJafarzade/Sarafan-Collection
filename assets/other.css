@@ -47,11 +47,15 @@ img {
     color: #2D2D2D;
 }
 
+.overlay {
+    position: relative;
+}
+
 .overlay a i {
     position: absolute;
     top: 11px;
     right: 11px;
-    color: blue;
+    color: white;
     font-size: 18px;
 }
 
@@ -61,7 +65,7 @@ img {
 }
 
 .atlet-images img {
-    padding-top: 10px;
+    padding: 10px 5px;
 }
 
 .atlet-header {
