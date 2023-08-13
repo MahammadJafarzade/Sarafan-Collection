@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-section {
+    max-width: 1600px;
+    width: 100%;
+    height: 1007px;
+    margin: 0 auto;
+    padding: 31px 0 100px;
+    overflow: hidden;
+}
+
+.contact-heading {
+    position: relative;
+    max-width: 1175px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+    grid-template-rows: 359px 851px 436px;
+    gap: 30px;
+    margin: 0 auto;
+    color: #2d2d2d;
+    padding: 0 10px;
+
+}
+
+.contact-card {
+    max-width: 470px;
+    width: 100%;
+    height: 359px;
+    padding: 0 10px;
+}
+
+.contact-card div {
+    padding-bottom: 40px;
+}
+
+.contact-home p {
+    font-size: 13px;
+}
+
+.contact-home h1 {
+    font-size: 25px;
+}
+
+.contact-card h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 470px;
+    width: 100%;
+    height: 436px;
+    padding: 0 10px;
+}
+
+.contact-form h3 {
+    font-size: 18px;
+    margin: 42px 0 0;
+}
+
+.contact-form input {
+    width: 100%;
+    color: #333;
+    padding-bottom: 11px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DADADA;
+    margin-top: 40px;
+}
+
+.contact-form p {
+    padding-top: 32px;
+}
+
+.contact-form button {
+    max-width: 370px;
+    width: 100%;
+    padding: 19px 0;
+    background: #2D2D2D;
+    color: #fff;
+    margin: 20px auto 0;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: all 0.5 ease;
+}
+
+.contact-form button:hover {
+    background-color: #fff;
+    color: #2D2D2D;
+    border: 1px solid #000;
+}
+
+.contactMap {
+    max-width: 670px;
+    width: 100%;
+    height: 851px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:969px) {
+    .contact-section {
+        overflow: auto;
+    }
+
+    .contact-heading {
+        place-items: center;
+        padding: 0;
+        grid-template-rows: 359px 406px 436px;
+    }
+
+    .contactMap {
+        height: 406px;
+    }
+}
+
+@media screen and (max-width:469px) {
+    .contact-heading {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media screen and (max-width:269px) {
+    .contact-heading {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .contactMap {
+        height: 406px;
+        margin-top: 90px;
+    }
+}

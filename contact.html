@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarafan Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/reset/reset.css">
+    <link rel="stylesheet" href="./assets/grid/grid.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/other.css">
+    <link rel="stylesheet" href="./assets/contact.css">
+
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyC6p6IAuAep2e1ahjE6eTgWB8fR0bF19Lo",
+            v: "weekly",
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navlist">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="./clothes.html">Clothes</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="./index.html"> <img src="./assets/images/logo.png" alt=""></a>
+            </div>
+            <div class="user-info">
+                <div>
+                    <a href="#"> <img src="./assets/images/like.png" alt=""></a>
+                </div>
+                <div class="basket">
+                    <a href="#"><img src="./assets/images/basket.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"> <img src="./assets/images/user.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contact-section">
+        <div class="contact-heading">
+            <div class="contact-card">
+                <div class="contact-home">
+                    <p>Home / Contacts</p>
+                    <h1>Connect with us</h1>
+                </div>
+                <div>
+                    <h2>Telephone</h2>
+                    <p>8 977 409‑41‑99</p>
+                </div>
+                <div>
+                    <h2>E-mail</h2>
+                    <p>online_store@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Showroom address</h2>
+                    <p>Moscow, st. Novy Arbat 36/3, shopping center "Sphere", 1st floor
+                        Opening hours Mon-Sun 12:00 – 21:00</p>
+                </div>
+            </div>
+            <div class="contactMap" id="map"></div>
+            <form class="contact-form">
+                <h3>If you have ideas, wishes, comments - write! And we will do our best to improve.</h3>
+                <input type="text" placeholder="Name *" required>
+                <input type="text" placeholder="Telephone *" required>
+                <input type="text" placeholder="Describe the nature of your request *" required>
+                <p>* Required fields</p>
+                <p>By clicking on the "Submit" button, I agree to the privacy policy and the processing of personal data
+                </p>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    let map;
+
+    async function initMap() {
+        const position = { lat: 40.4093, lng: 49.8671 };
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+        map = new Map(document.getElementById("map"), {
+            zoom: 13,
+            center: position,
+            mapId: "DEMO_MAP_ID",
+        });
+
+        const marker = new AdvancedMarkerElement({
+            map: map,
+            position: position,
+            title: "Baku",
+        });
+    }
+
+    initMap();
+
+</script>
+
+</html>
