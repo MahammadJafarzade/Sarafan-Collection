@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* * Login */
+
+.form-section {
+    max-width: 1600px;
+    width: 100%;
+    height: 542px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.form-login {
+    max-width: 443px;
+    width: 100%;
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 76px 20px 160px;
+}
+
+.form-login h1,
+.form-register h1,
+.form-password h1 {
+    font-size: 25px;
+    color: #2D2D2D;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.form-login input,
+.form-register input,
+.form-password input {
+    color: #333;
+    padding-bottom: 11px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DADADA;
+}
+
+.form-login button,
+.form-register button,
+.form-password button {
+    max-width: 370px;
+    width: 100%;
+    padding: 19px 0;
+    background: #2D2D2D;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: all 0.5 ease;
+}
+
+.form-login button:hover,
+.form-register button:hover,
+.form-password button:hover {
+    background-color: #fff;
+    color: #2D2D2D;
+    border: 1px solid #000;
+}
+
+.form-login p a {
+    font-size: 18px;
+}
+
+.form-login p,
+.form-password p {
+    font-size: 18px;
+}
+
+/* * Register */
+.form-register {
+    max-width: 443px;
+    width: 100%;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 76px 20px 100px;
+}
+
+.form-register div {
+    display: flex;
+    gap: 23px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-register div input {
+    cursor: pointer;
+}
+
+.form-register div p {
+    font-size: 14px;
+    color: #2D2D2D;
+}
+
+/* * Password */
+.form-password {
+    max-width: 443px;
+    width: 100%;
+    height: 267px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 86px 20px 199px;
+}
