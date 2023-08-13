@@ -433,7 +433,17 @@
             },
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburgerMenu = document.getElementById("hamburger-menu");
+            const navbarContent = document.getElementById("navbar-content");
 
+            hamburgerMenu.addEventListener("click", function () {
+                navbarContent.classList.toggle("show");
+            });
+        });
+
+    </script>
     <script src="https://kit.fontawesome.com/132f54ee8c.js" crossorigin="anonymous"></script>
     <script src="./assets/main.js"></script>
 
