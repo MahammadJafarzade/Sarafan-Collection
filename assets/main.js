@@ -21,3 +21,12 @@ Object.assign(swiperEl, {
         },
     },
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navbarContent = document.getElementById("navbar-content");
+
+    hamburgerMenu.addEventListener("click", function () {
+        navbarContent.classList.toggle("show");
+    });
+});
