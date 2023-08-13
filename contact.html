@@ -116,7 +116,18 @@
         </div>
     </section>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+        const navbarContent = document.getElementById("navbar-content");
 
+        hamburgerMenu.addEventListener("click", function () {
+            navbarContent.classList.toggle("show");
+        });
+    });
+
+</script>
+<script src="./assets/main.js"></script>
 <script>
 
     let map;

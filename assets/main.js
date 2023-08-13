@@ -1,26 +1,3 @@
-const swiperEl = document.querySelector('swiper-container');
-
-Object.assign(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-        },
-    },
-});
 "use strict";
 var acc = document.getElementsByClassName("accordion");
 
@@ -123,13 +100,6 @@ document.querySelector(".next-btn").addEventListener("click", nextSlide);
 document.querySelector(".prev-btn").addEventListener("click", prevSlide);
 showSlide(currentSlide);
 
-
-
-
-
-
-
-
 function showSlide(slideIndex) {
     if (slideIndex < 0) {
         currentSlide = slides.length - 1;
@@ -167,12 +137,6 @@ document.querySelector(".next-btn").addEventListener("click", nextSlide);
 document.querySelector(".prev-btn").addEventListener("click", prevSlide);
 showSlide(currentSlide);
 
-
-
-
-
-
-
 // ölçü
 var selectSelected = document.querySelector(".custom-select__select-selected");
 var selectItems = document.querySelector(".custom-select__select-items");
@@ -188,6 +152,7 @@ options.forEach(function (option) {
         selectItems.classList.remove("custom-select__show");
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerMenu = document.getElementById("hamburger-menu");
