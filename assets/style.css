@@ -178,27 +178,70 @@
 }
 
 .footer {
+    max-width: 1296px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Sosyal Medya */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 10px;
+}
+
+.social-media ul li {
+    margin-right: 10px;
+    
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 @media screen and (max-width:600px) {
     .footer h2 {
         text-align: center;
     }
-
-
 }
 
 .footer-menu ul li a {
     text-decoration: none;
     color: #2D2D2D;
+    text-align: center;
 }
 
 .social-media ul li a {
     text-decoration: none;
     color: #2D2D2D;
+    text-align: center;
 }
 
 hr {
