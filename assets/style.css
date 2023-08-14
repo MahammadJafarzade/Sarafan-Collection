@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: space-around;
     background-image: url(./images/img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar {
