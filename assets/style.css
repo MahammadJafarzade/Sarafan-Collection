@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: no-repeat url(./images/img1.png);
+
     background-size: cover;
 }
 
