@@ -120,3 +120,6 @@ a {
     justify-content: space-between;
     margin: 86px 20px 199px;
 }
+.form-password input{
+    padding-left: 10px;
+}
