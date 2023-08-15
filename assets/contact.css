@@ -36,7 +36,7 @@
 }
 
 .contact-card div {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .contact-home p {
@@ -61,7 +61,7 @@
 
 .contact-form h3 {
     font-size: 18px;
-    margin: 42px 0 0;
+    margin: 22px 0 0;
 }
 
 .contact-form input {
@@ -71,7 +71,7 @@
     border: none;
     outline: none;
     border-bottom: 1px solid #DADADA;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .contact-form p {
