@@ -104,10 +104,9 @@ section {
 }
 @media screen and (max-width: 767px) {
     .clothes-img-one img{
-        height: auto;
-        min-height: 600px;
+        height: 600px;
     }
     .product img {
-        max-height: 600px;
+        height: 600px;
     }
 }
