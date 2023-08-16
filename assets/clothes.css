@@ -1,13 +1,24 @@
-
+.clothes{
+    width: 100%;
+}
 .clothes-image {
     position: relative;
 }
 
 .clothes-image img {
     width: 100%;
-    height: 850px;
+    height: auto;
     border-radius: 5px;
     cursor: pointer;
+    object-fit: cover;
+}
+.clothes-image-one img, .clothes-image-two img{
+    max-width: 570px; 
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 850px;
+    object-fit: cover;
 }
 
 .clothes-title {
@@ -34,13 +45,22 @@ section {
     letter-spacing: 0.75px;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-}
 
 .product {
+    max-width: 599px;
+    width: 100%;
     padding: 30px 5px;
+}
+.product-card{
+    padding: 0 0 0 24px;
+}
+.product-img{
+    padding: 0 0 0 24px;
+}
+.product-img .clothes-title{
+    max-width: 570px; 
+    width: 100%;
+    margin: 0 auto;
 }
 
 .product-title span a {
@@ -75,14 +95,10 @@ img {
     letter-spacing: 0.75px;
 }
 
-.clothes-image img {
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 .clothes-title {
     padding-top: 8px;
+    padding-left: 8px;
     color: #2D2D2D;
     font-family: Montserrat;
     font-size: 16px;
@@ -97,19 +113,17 @@ img {
 }
 
 .product-card {
-    width: 472px;
-    flex-shrink: 0;
+    max-width: 472px;
+    width: 100%;
 }
 
 .product-card>img {
     height: 100%;
-
 }
 
 .product-header-filter {
     display: flex;
     justify-content: space-between;
-
 }
 
 .product-filter select {
@@ -137,10 +151,53 @@ img {
 
 .overlay {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 25px;
+    right: 25px;
 }
 
 .overlay a>i {
     font-size: 24px;
+}
+@media screen and (max-width:1216px) {
+    .product-img{
+        padding: 0 0 0 24px;
+    }
+    .product-card {
+        margin-bottom: 30px;
+    }
+    .clothes-image{
+        max-width: 570px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .clothes-image-one img,.clothes-image-two img {
+        height: auto;
+        max-height: 600px; 
+    }
+
+    .product-img .clothes-title {
+        max-width: 100%;
+        width: 100%;
+    }
+    .product {
+        max-width: 100%; 
+        margin-bottom: 30px;
+    }
+    .overlay {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+}
+    
+@media screen and (max-width:430px) {
+    .overlay {
+        top: 1px;
+        right: 1px;
+    }
+    .overlay a>i{
+        font-size: 16px;
+    }
 }
